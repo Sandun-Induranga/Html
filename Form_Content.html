@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HyperText Markup Language</title>
+    <link rel="icon" href="images.jpeg">
+    <!--    <base href="localhost">-->
+    <meta name="keywords" content="IJSE, GDSE, Internet Technologies, GDSE 59, GDSE 60, HTML">
+    <meta name="description" content="This is a demonstration for GDSE students for learning HTML">
+    <meta name="author" content="Institute of Software Engineering">
+    <meta name="owner" content="IJSE">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no">
+    <meta name="theme-color" content="green">
+</head>
+<body>
+<h1>Forms</h1>
+<hr>
+<form action="ijse" method="post" id="cusForm">
+    <fieldset>
+        <legend>Customer Form</legend>
+        <label for="txtCusID">Customer ID</label>
+        <input type="text" id="txtCusID" name="customerId" placeholder="C001" required pattern="(C)[0-9]{3}">
+        <br>
+        <br>
+
+        <label for="txtCusName">Customer Name</label>
+        <input type="text" id="txtCusName" name="customerName" placeholder="John" required>
+        <br>
+        <br>
+
+        <label for="txtCusAddress">Customer Address</label>
+        <input type="text" id="txtCusAddress" name="customerAddress" placeholder="Galle" required>
+        <br>
+        <br>
+
+        <label for="bDay">Customer Salary</label>
+        <input type="date" id="bDay" name="bDay" required>
+        <br>
+        <br>
+
+        <label for="txtCusSalary">Customer Salary</label>
+        <input type="number" id="txtCusSalary" name="customerSalary" placeholder="10000" required>
+        <br>
+        <br>
+
+        <label for="txtEmail">Customer Email</label>
+        <input type="number" id="txtEmail" name="customerEmail" placeholder="sandu@gmail.com" required>
+        <br>
+        <br>
+
+        <label for="genderMale">Male</label>
+        <input type="radio" id="genderMale" name="gender" value="male" required>
+
+        <label for="genderFemale">Female</label>
+        <input type="radio" id="genderFemale" name="gender" value="female" required>
+        <br>
+        <br>
+
+        <label for="genderFemale">Choose your color tone</label>
+        <input type="color" id="color" name="colorTone" required>
+        <br>
+        <br>
+
+        <label for="txtEng">Choose your English Fluency</label>
+        <input type="range" min="0" max="100" id="txtEng" name="engFlu" required>
+        <br>
+        <br>
+
+        <label for="profilePic">Upload profile photo</label>
+        <input type="file" id="profilePic" name="profilePic" required>
+        <br>
+        <br>
+
+        <label for="txtOpinion">Your Opinion</label>
+        <textarea name="myOpinion" id="txtOpinion" cols="100" rows="10"></textarea>
+        <br>
+        <br>
+
+        <label for="selectCourse">Select Course</label>
+        <select name="" id="selectCourse" required multiple>
+            <optgroup label="First Group">
+                <option value="GDSE">GDSE</option>
+                <option value="CMJD">CMJD</option>
+            </optgroup>
+            <optgroup label="second Group">
+                <option value="DEP">DEP</option>
+                <option value="RMAD">RMAD</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+
+        <label for="selectColor">Choose favourite colors</label>
+        <input type="text" name="colors" id="selectColor" list="colorList">
+
+        <datalist id="colorList">
+            <option value="RED">
+            <option value="GREEN">
+            <option value="ORANGE">
+            <option value="PURPLE">
+            <option value="PINK">
+        </datalist>
+        <br>
+        <br>
+
+        <label for="realColor">Choose favourite colors</label>
+        <input type="color" name="color" id="realColor" list="colorList2">
+
+        <datalist id="colorList2">
+            <option value="#F00000">
+            <option value="#549F39">
+            <option value="#EF4A12">
+            <option value="#7432AA">
+        </datalist>
+        <br>
+        <br>
+
+        <label for="time">Time Selection</label>
+        <input type="time" name="id" id="time" list="timeList">
+
+        <datalist id="timeList">
+            <option value="12:00">
+            <option value="14:00">
+            <option value="01:00">
+            <option value="15:00">
+        </datalist>
+        <br>
+        <br>
+
+        <label for="progress">Check Progress</label>
+        <progress id="progress" max="100" value="90">70%</progress>
+        <br>
+        <br>
+
+        <label for="meter">Set Value Ranges</label>
+        <meter id="meter" min="0" max="100" low="20" high="75" optimum="80" value="20"></meter>
+        <br>
+        <br>
+
+        <label for="acceptCheckBox">Accept all terms and conditions</label>
+        <input type="checkbox" id="acceptCheckBox" name="accept" value="accepted" required >
+        <br>
+        <br>
+        <br>
+
+        <!-- default button type is submit -->
+        <button type="submit">Save Customer</button>
+        <button type="submit">Update Customer</button>
+        <button type="submit">Delete Customer</button>
+        <button type="reset">Reset Customer</button>
+    </fieldset>
+</form>
+<br>
+<br>
+<br>
+<br>
+<form oninput="dis.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" name="a">
+    <input type="number" name="b">
+    <output name="dis">100</output>
+</form>
+
+<br>
+<br>
+<button type="submit" form="cusForm" formaction="saveCustomer" formmethod="post" formtarget="_blank">Save Customer</button>
+<button type="submit" form="cusForm" formaction="updateCustomer" formmethod="get">Update Customer</button>
+<button type="submit" form="cusForm" formaction="deleteCustomer">Delete Customer</button>
+
+<details>
+    <summary>GDSE</summary>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita itaque minus nemo perspiciatis provident qui repellendus sint tempora! Assumenda delectus error impedit, ipsam modi optio possimus quia quisquam ratione rerum!
+</details>
+<details>
+    <summary>CMJD</summary>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita itaque minus nemo perspiciatis provident qui repellendus sint tempora! Assumenda delectus error impedit, ipsam modi optio possimus quia quisquam ratione rerum!
+</details>
+
+<dialog open>
+    <p>Hello there.. How are you?</p>
+    <form method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
+
+</body>
+</html>

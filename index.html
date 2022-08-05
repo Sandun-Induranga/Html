@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>HyperText Markup Language</title>
+    <link rel="icon" href="images.jpeg">
+    <!--    <base href="localhost">-->
+    <meta name="keywords" content="IJSE, GDSE, Internet Technologies, GDSE 59, GDSE 60, HTML">
+    <meta name="description" content="This is a demonstration for GDSE students for learning HTML">
+    <meta name="author" content="Institute of Software Engineering">
+    <meta name="owner" content="IJSE">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no">
+    <meta name="theme-color" content="green">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ol>
+            <li><a href="#select">Go to selected Para</a></li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Services</li>
+        </ol>
+
+        <ul>
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <aside>
+        <nav>
+            <!--definition/description list-->
+            <dl>
+                <dt>IJSE</dt>
+                <dd>Institute of Software Engineering</dd>
+
+                <dt>CMJD</dt>
+                <dd>Comprehensive Master In Java Developing</dd>
+
+                <dt>ABSD</dt>
+                <dd>Advanced Business Solution Developer</dd>
+            </dl>
+
+            <!--Alternative to UL-->
+            <menu>
+                <li>Menu One</li>
+                <li>Menu Two</li>
+                <li>Menu Three</li>
+            </menu>
+
+        </nav>
+        <section>
+            <img src="assets/images/image3.gif" alt="This is a homepage image">
+            <img src="assets/images/image2.png" alt="" usemap="#seo-map">
+
+            <map name="seo-map">
+                <area shape="circle" coords="0,0,100" href="https://ijse.lk" alt="">
+                <area shape="circle" coords="500,500,100" href="https://google.com" alt="">
+            </map>
+            <br>
+
+            <audio src="assets/audios/attention.mp3" controls loop muted></audio>
+
+            <video src="assets/video/videoplayback.mp4" controls muted autoplay>
+                <track default src="assets/video/caption.vtt" kind="captions" srclang="en">
+            </video>
+        </section>
+    </aside>
+    <section>
+        <section>
+            <div></div><!--flow container-->
+            <hr>
+            <div></div><!--flow container-->
+        </section>
+        <article>
+            <figure>
+                <!--image or what ever you want (Self-contained content)-->
+                <figcaption>This is an elephant image</figcaption>
+            </figure>
+
+        </article>
+        <article>
+            <!--Text Content-->
+            <blockquote cite="http://abc.lk">
+                "This was extracted from ABC.lk site else, You can use a blockquote to emphasise something extracted
+                from somewhere"
+            </blockquote>
+
+            <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam distinctio,
+
+                ea harum libero magnam minima mollitia,
+
+                omnis praesentium quia,
+
+                quisquam voluptatum? Aliquam, asperiores atque harum
+                nisi porro qui suscipit. Lorem ipsum dolor sit amet,
+
+                consectetur adipisicing elit. At cumque distinctio
+                eveniet illo, itaque iusto maiores molestias mollitia
+
+                natus necessitatibus nisi nulla placeat quibusdam
+                quis repellendus reprehenderit totam voluptate voluptatum!</pre>
+
+            <!--Inline Text Semantics-->
+            <p>Lorem ipsum dolor sit amet, <a href="http://ijse.lk" target="_blank">IJSE</a> consectetur <a
+                    href="tel:+94740098523">Contact Us</a> elit. Aliquam aperiam distinctio, ea harum libero
+                magnam minima mollitia, omnis <a href="mailto:sanduninduranga2001@gmail.com">Send Us an Email</a>
+                praesentium quia, quisquam voluptatum? Aliquam, asperiores atque harum
+                nisi porro qui suscipit.</p>
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur <a href="images.jpeg" download="name.jpeg">Download Image</a>
+                adipisicing elit. Aliquam aperiam distinctio, ea harum libero
+                magnam minima <abbr title="Institute Of Software Engineering">IJSE</abbr> mollitia, omnis praesentium
+                quia, quisquam voluptatum? Aliquam, asperiores atque harum
+                nisi porro qui suscipit.</p>
+
+            <p>Lorem ipsum <code>main()</code> is a java method. dolor sit amet, consectetur adipisicing elit. Aliquam
+                aperiam distinctio, ea harum libero
+                magnam minima mollitia, omnis praesentium quia, quisquam voluptatum? Aliquam, asperiores atque harum
+                nisi porro qui suscipit.</p>
+
+            <p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit.</em> Consequatur hic magni numquam pariatur
+                similique soluta. Dolores laboriosam, magnam! Distinctio dolor dolorem doloribus eius explicabo
+                inventore maiores necessitatibus obcaecati praesentium quidem.</p>
+
+            <p>Lorem ipsum dolor <i>sit amet, consectetur adipisicing elit.</i> Consequatur hic magni numquam pariatur
+                similique soluta. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>l</kbd> Dolores laboriosam, magnam! Distinctio
+                dolor dolorem doloribus eius explicabo
+                inventore maiores necessitatibus obcaecati praesentium quidem.</p>
+
+            <p>Lorem ipsum dolor sit amet,
+                <mark>consectetur adipisicing elit.</mark>
+                Consequatur hic magni numquam pariatur
+                similique soluta. <q cite="http://ijse.lk">Dolores 2 <sup>nd</sup> laboriosam, O<sub>2</sub>magnam!
+                    Distinctio dolor dolorem
+                    doloribus</q> eius explicabo
+                inventore maiores necessitatibus obcaecati praesentium quidem.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur hic magni numquam pariatur
+                similique soluta. Dolores <s>laboriosam, magnam! Distinctio dolor dolorem doloribus eius explicabo</s>
+                inventore <samp>maiores necessitatibus obcaecati praesentium quidem</samp> .</p>
+
+            <p>Lorem ipsum dolor sit amet, <span
+                    style="font-size: 24px; color: blue">consectetur adipisicing elit.</span> Consequatur hic magni
+                numquam pariatur
+                similique soluta. Dolores laboriosam, <strong>Warning</strong> magnam! Distinctio dolor dolorem
+                doloribus eius explicabo
+                inventore maiores necessitatibus obcaecati praesentium quidem.</p>
+
+            <!-- ctrl + alt + ; to emoji -->
+
+            <p>Lorem 😁ipsum dolor sit amet,
+                <time datetime="200-08-10 9:10:00.222">2022 Aug 10</time>
+                consectetur adipisicing elit. Consequatur hic magni numquam pariatur
+                similique soluta. Dolores laboriosam, magnam! Distinctio dolor dolorem doloribus eius explicabo
+                inventore maiores necessitatibus obcaecati praesentium quidem.
+            </p>
+
+            <p>Lorem ipsum dolor <u>Spellng Mistaks</u> sit amet, consectetur adipisicing elit. Consequatur hic magni
+                numquam pariatur
+                similique soluta. Dolores <var>x</var> + <var>y</var> = <var>z</var> laboriosam, magnam! Distinctio
+                dolor dolorem doloribus eius explicabo
+                inventore maiores necessitatibus obcaecati praesentium quidem.</p>
+
+            <p>Lorem <dfn id="select">Selected Paragraph</dfn> ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur hic magni numquam pariatur
+                similique soluta. Dolores laboriosam, magnam! Distinctio dolor dolorem doloribus eius explicabo
+                inventore maiores necessitatibus obcaecati praesentium quidem.</p>
+
+            <p>Loremipsumdolorsitametconsecteturadipisicingelit.Consequaturhicmagninumquampariatursimiliquesolu
+                <wbr>
+                taDoloreslaboriosammagnamDistinctiodolordoloremdoloribuseiusexplicabo
+            </p>
+
+            <p><small>All Rights Reserved</small></p>
+
+        </article>
+        <embed src="assets/video/videoplayback.mp4" type="video/mp4">
+
+        <hr>
+        <iframe src="https://sandun-induranga-portfolio.000webhostapp.com/" width="100%" height="600px"
+                frameborder="0"></iframe>
+        <!-- Copy paste from youtube-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0xwqygHqB3k" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <hr>
+        <object data="assets/pdf/certificate.pdf" type="application/pdf" width="100%" height="400px"></object>
+        <hr>
+
+        <picture>
+            <source srcset="images.jpeg" media="(min-width:800px)">
+            <img src="assets/images/image3.gif" alt="">
+        </picture>
+    </section>
+</main>
+
+<footer>
+    <address></address>
+    <address></address>
+    <address></address>
+</footer>
+<h1>Hello there</h1>
+
+<p><del>Lorem ipsum dolor sit amet,</del> consectetur adipisicing elit. <s>Accusantium aliquid, amet cum cumque</s> doloribus, ea facere
+    fugiat id laudantium <ins>obcaecati officiis perferendis</ins> possimus, quo reprehenderit sunt temporibus unde vel
+    voluptatibus.</p>
+<script>
+    document.getElementsByTagName("h1")[0].innerText = "This was changed by JS";
+</script>
+<noscript>
+    This browser not going to support javascript
+</noscript>
+</body>
+</html>

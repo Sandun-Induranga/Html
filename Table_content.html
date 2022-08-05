@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HyperText Markup Language</title>
+    <link rel="icon" href="images.jpeg">
+    <!--    <base href="localhost">-->
+    <meta name="keywords" content="IJSE, GDSE, Internet Technologies, GDSE 59, GDSE 60, HTML">
+    <meta name="description" content="This is a demonstration for GDSE students for learning HTML">
+    <meta name="author" content="Institute of Software Engineering">
+    <meta name="owner" content="IJSE">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no">
+    <meta name="theme-color" content="green">
+</head>
+<body>
+<h1>Customer Table</h1>
+<hr>
+
+<table border="2" width="300px">
+    <caption>This is a customer table</caption>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Salary</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>C001</td>
+        <td>Dasun</td>
+        <td colspan="2">Galle</td>
+        <!-- <td>10,000</td> -->
+    </tr>
+    <tr>
+        <td>C002</td>
+        <td>Kamal</td>
+        <td>Panadura</td>
+        <td>10,000</td>
+    </tr>
+    <tr>
+        <td>C002</td>
+        <td>Kamal</td>
+        <td>Panadura</td>
+        <td rowspan="2">10,000</td>
+    </tr>
+    <tr>
+        <td rowspan="2">C003</td>
+        <td>Kamal</td>
+        <td>Panadura</td>
+        <!-- <td>10,000</td> -->
+    </tr>
+    <tr>
+        <!-- <td>C003</td> -->
+        <td>Kamal</td>
+        <td>Panadura</td>
+        <td>10,000</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Salary</th>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>
